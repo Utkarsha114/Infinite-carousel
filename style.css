@@ -1,0 +1,57 @@
+.body{
+
+background-color: grey;
+
+display: flex;
+
+justify-content: center;
+
+margin:0;
+
+height:100vh;
+
+}
+
+.carousel {
+
+overflow: hidden;
+
+width: 600px
+
+}
+
+.wrap {
+
+display:grid;
+
+grid-auto-flow: column;
+
+grid-auto-columns: 250px;
+
+justify-items: stretch;
+
+animation: slide 5s linear infinite;
+
+}
+
+.wrap img {
+
+width :200px;
+
+height: 200px;
+
+border-radius: 50%;
+
+object-fit: cover;
+
+}
+
+@keyframes slide {
+
+to {
+
+translate: calc(-4 * 250px);
+
+}
+
+}
